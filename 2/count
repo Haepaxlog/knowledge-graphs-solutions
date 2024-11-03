@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+dir_path=$(readlink -f "../1/simple-graphs")
+
+for file in $dir_path/*; do
+  if [ -f "$file" ]; then
+      echo "Reading $file"
+      python3 metis.py $file
+      echo "Outputting $file in METIS"
+      echo "Counting triangles for $file"
+      python3 triangle.py out
+      rm out
+  fi
+done
