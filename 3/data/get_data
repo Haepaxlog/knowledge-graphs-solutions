@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+curl -L -O "https://github.com/knowsys/Course-Knowledge-Graphs/raw/refs/heads/main/data/dblp/authorship-snippet.nt.gz?download="
+curl -L -O "https://github.com/knowsys/Course-Knowledge-Graphs/raw/refs/heads/main/data/dblp/authorship.nt.gz?download="
